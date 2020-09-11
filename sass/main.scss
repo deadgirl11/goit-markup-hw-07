@@ -1,0 +1,17 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './base/base-selectors';
+@import './base/container';
+@import './base/flex-container';
+// Hero
+@import './components/hero-section';
+// Modal Window
+@import './components/modal-window';
+// Features Section
+@import './components/features-section';
+// Works Section
+@import './components/works-section';
+// Team Section
+@import './components/team-section';
+// Clients Section
+@import './components/clients-section';

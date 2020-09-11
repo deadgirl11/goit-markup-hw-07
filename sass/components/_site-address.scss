@@ -1,0 +1,41 @@
+.site-address {
+  @extend %list;
+  display: flex;
+  margin-left: auto;
+
+  font-weight: 500;
+
+  letter-spacing: 0.02em;
+
+  a {
+    color: $primary-text-color;
+
+    transition: color $transition-duration $transition-timing-function;
+  }
+}
+
+.address-item a {
+  @extend %centered-flex;
+  @extend %link;
+}
+
+.icon-address {
+  display: block;
+  margin: 0;
+  margin-right: 10px;
+
+  fill: currentColor;
+
+  transition: fill $transition-duration $transition-timing-function;
+}
+
+.site-address {
+  .address-item:not(:last-child) {
+    margin-right: 51px;
+  }
+
+  & a:hover,
+  & a:focus {
+    color: $accent-color;
+  }
+}

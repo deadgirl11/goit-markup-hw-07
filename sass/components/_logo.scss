@@ -1,0 +1,29 @@
+.logo {
+  margin-right: 107px;
+
+  color: $title-text-color;
+
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  .logo-primary {
+    color: $accent-color;
+  }
+}
+
+.flex-container .logo {
+  @extend %link;
+  animation: logo-appear 350ms linear;
+}
+
+@keyframes logo-appear {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
